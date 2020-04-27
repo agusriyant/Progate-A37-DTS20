@@ -1,0 +1,348 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lucida Grande";
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-color: #26d0c9;
+  color: #fff;
+  height: 90px;
+}
+
+.header-logo {
+  float: left;
+  font-size: 33px;
+  padding: 20px 40px;
+}
+
+
+.header-list li {
+  float: left;
+  padding: 33px 20px;
+ transition: all 0.5s;
+}
+
+.header-list li a{
+	text-decoration: none;
+	color: white;
+	padding: 3px 3px;
+	display: block;
+	line-height: 3px;
+}
+
+.header-list li:hover {
+	background-color: rgba(5, 255, 230, 0.5);
+}
+
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(bagian-utama1.jfif);
+  background-size: cover;
+  color: white;
+  text-align: left;
+
+}
+
+.top-wrapper h1 {
+  opacity: 1;
+  font-size: 70px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+  padding-left: 200px
+}
+
+.top-wrapper h6 {
+  opacity: 1;
+  font-size: 20px;
+  letter-spacing: 4px;
+  margin-bottom: 3px;
+  padding-left: 200px;
+
+}
+
+
+
+.cards{
+	width: 85%;
+	margin: auto;
+	display: flex;
+}
+
+.card {
+	flex: auto;
+	width: 25%;
+    padding-top: 20px;
+    margin: 10px 10px 20px 10px;
+    background-color: rgba(214, 224, 226, 0.2);
+    border-top-width: 0;
+    border-bottom-width: 2px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.card:hover {
+	opacity: 0.8;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+@media (max-width: 1000px){
+
+	.cards{
+	    flex-wrap: wrap;
+	 }
+
+	.cards .card {
+		width: 40%;
+	}
+}
+
+
+
+@media (max-width: 670px){
+	.cards{
+	    flex-direction: column;
+	 }
+
+	 .cards .card {
+		margin: auto;
+		width: 80%;
+		margin-bottom: 20px;
+	}
+}
+
+.card.hovercard {
+    position: relative;
+    padding-top: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgba(214, 224, 226, 0.2);
+}
+
+.card.hovercard .cardheader1 {
+    background: url("./img/bg1.jpg");
+    background-size: cover;
+    height: 135px;
+}
+
+.card.hovercard .cardheader2 {
+    background: url("./img/bg2.jpg");
+    background-size: cover;
+    height: 135px;
+}
+
+.card.hovercard .cardheader3 {
+    background: url("./img/bg3.jpg");
+    background-size: cover;
+    height: 135px;
+}
+
+.card.hovercard .cardheader4 {
+    background: url("./img/bg4.jpg");
+    background-size: cover;
+    height: 135px;
+}
+
+.card.hovercard .avatar {
+    position: relative;
+    top: -50px;
+    margin-bottom: -50px;
+}
+
+.card.hovercard .avatar img {
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid rgba(255,255,255,0.5);
+}
+
+.card.hovercard .info {
+    padding: 4px 8px 10px;
+}
+
+.card.hovercard .info .title {
+    margin-bottom: 4px;
+    font-size: 24px;
+    line-height: 1;
+    color: #262626;
+    vertical-align: middle;
+}
+
+.card.hovercard .info .title a{
+    color: gray;
+    text-decoration: none;
+}
+
+.card.hovercard .info .desc {
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 20px;
+    color: #737373;
+    text-overflow: ellipsis;
+}
+
+.card.hovercard .bottom {
+    padding: 0 20px;
+    margin: auto;
+    height: 30px;
+    display: flex;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.btn{
+	flex-wrap: wrap;
+	width: 25%;
+	border-radius: 50%;
+	margin: 2px;
+}
+
+.btn a{
+	line-height: 27px;
+	font-size: 15px;
+	color: white;
+}
+
+.bottom .twitter{
+	background-color: #12b3c4;
+}
+
+.bottom .instagram{
+	background-color: red;
+}
+
+.bottom .facebook{
+	background-color: #1b1ebd;
+}
+
+.bottom .link-in{
+	background-color: #3c7cbf;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+/* Tambahkan CSS untuk menu-icon */
+.lesson-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: normal;
+}
+
+.lesson {
+  float: left;
+  width: 25%;
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon p {
+  position: absolute;
+  top:90%;
+  width: 100%;
+  color: black;
+}
+
+.text-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 15px;
+  color: #b3aeb5;
+}
+
+.heading h3 {
+  font-weight: normal;
+}
+
+.contact-form {
+  padding-top: 100px;
+  padding-left: 10px;
+}
+
+.section-title {
+  border-bottom: 2px solid #dee7ec;
+  font-size: 28px;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+}
+
+/* Tambahkan CSS untuk tags <input> dan <textarea> */
+input,textarea{
+  width:500px;
+  margin-top:10px;
+  margin-bottom:30px;
+  padding:10px;
+  font-size:18px;
+  border:1px solid #dee7ec;
+
+}
+
+/* Tambahkan CSS untuk contact-submit */
+.contact-submit{
+  background-color:#dee7ec;
+  color:#889eab;
+}
+
+
+.footer {
+  background-color: #2f5167;
+  color: #fff;
+  height: 120px;
+  padding: 10px;
+}
+
+.footer-logo {
+  float: left;
+  font-size: 32px;
+}
+
+.footer-list {
+  float: right;
+}
+
+.footer-list li {
+  padding-bottom: 10px;
+
+}
+
+.footer-list a{
+	color: white;
+}
